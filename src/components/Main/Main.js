@@ -3,6 +3,7 @@ import {Card,CardHeader,CardContent,Typography,Grid,Divider} from "@mui/material
 import { ClassNames } from '@emotion/react'
 import useStyles from "./styles"
 import FormComponent from './Form'
+import InfoCard from "./InfoCard"
 import List from "./List"
 import { useExpenseContext } from '../../context/context'
 
@@ -15,7 +16,7 @@ const Main = () => {
         <CardContent>
             <Typography align="center" variant="h5" >Total Balance ${balance}</Typography>
             <Typography variant='subtitle' style={{lineHeight:"1.5em",marginTop:"20px"}}>
-                Try saying: Add income for $100 in category salery for monday
+                <InfoCard />
             </Typography>
         </CardContent>
         <Divider  className={classes.divider}  />
